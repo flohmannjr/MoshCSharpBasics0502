@@ -17,11 +17,11 @@ namespace MoshCSharpBasics0502
             switch (Convert.ToInt32(Console.ReadLine()))
             {
                 case DivisiblesBy3:
-                    Console.Write("Divisibles by 3 between 1 and 100: ");
-                    for(int i = 1; i <= 100; i++)
-                        if(i%3 == 0)
-                            Console.Write(i + " ");
-                    Console.WriteLine();
+                    int count = 0;
+                    for (int i = 1; i <= 100; i++)
+                        if (i % 3 == 0)
+                            count++;
+                    Console.WriteLine("There are " + count + " numbers divisible by 3 between 1 and 100.");
                     break;
 
                 case AddingValue:
